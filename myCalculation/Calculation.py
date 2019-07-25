@@ -68,5 +68,5 @@ elif optr == 'divide':
    print(val_1, "/",val_2, "=", divide(val_1,val_2))
 
 else:
-   print("Invalid input")
+   print("Please Enter Operator")
 
