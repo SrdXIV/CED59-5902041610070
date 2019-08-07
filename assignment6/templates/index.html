@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Register Member</h2>
+                <form name = "register_member" action="{{ url_for('insert') }}" method="post" onsubmit="return check_register();">
+                    <div class="form-group">
+                    <label for="fname">Name</label>
+                     <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="lname">Surename</label>
+                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Your Surename" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="uname">Username</label>
+                    <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter Your Username" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your E-mail" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="pword">Password</label>
+                    <input type="password" class="form-control" id="pword" name="pword" placeholder="Enter Your Password" required>
+                    </div>
+                    <button type="submit" class="pull-right btn btn-primary" $sql>Confirm</button>
+                </form>
+        </div>
+    <script language="JavaScript">
+	function check_register()
+	{
+	  if(document.register_member.pword.value.length < 8)
+		 {
+			alert('Set at least 8 passwords');
+			return false;
+		 }
+	  var
+	}
+    </script>
+    <a href="/member" class = "btn btn-primary">View Member</a>
+    </body>
+</html>
