@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <h2>Register Member</h2>
-                <form name = "register_member" action="{{ url_for('insert') }}" method="post" onsubmit="return check_register();">
+                <form name = "register_member" action="{{ url_for('insert') }}" method="post" Onsubmit="return check_register();">
                     <div class="form-group">
                     <label for="fname">Name</label>
                      <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Your Name" required>
@@ -30,7 +30,7 @@
                     <label for="pword">Password</label>
                     <input type="password" class="form-control" id="pword" name="pword" placeholder="Enter Your Password" required>
                     </div>
-                    <button type="submit" class="pull-right btn btn-primary" $sql>Confirm</button>
+                    <button type="submit" class="pull-right btn btn-primary" >Confirm</button>
                 </form>
         </div>
     <script language="JavaScript">
@@ -41,7 +41,7 @@
 			alert('Set at least 8 passwords');
 			return false;
 		 }
-	  var
+
 	}
     </script>
     <a href="/member" class = "btn btn-primary">View Member</a>
