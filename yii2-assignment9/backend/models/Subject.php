@@ -15,4 +15,13 @@ class Subject extends \common\models\Subject
         ];
     }
 
+    public function rules()
+    {
+        return[
+            ['name','required','message' => 'please fill data'],
+            ['name','email','message' => 'fill type email ja']
+        ];
+
+    }
+
 }
